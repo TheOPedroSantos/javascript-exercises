@@ -1,9 +1,12 @@
-const sumAll = function(firstInt, secondInt) {
-    const result = 0;
-    for (let i = firstInt; i = secondInt; i++) {
-        result =+ i;
+const sumAll = function(start, end) {
+    if (start > end) {
+        [start, end] = [end, start];
     }
-return result;
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }
+    return sum;
 };
 
 console.log(sumAll(1, 4));
