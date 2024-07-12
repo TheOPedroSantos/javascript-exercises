@@ -33,12 +33,18 @@ const multiply = function(array) {
 // };
 
 const power = function(input1, input2) {
-	let result = 1;
-   
+  return result = Math.pow(input1, input2);
 };
 
-const factorial = function(input1, input2) {
-	
+const factorial = function(num) {
+  let result = num;
+  if (num == 0 || num == 1)
+    return 1;
+  while (num > 1) {
+    num--;
+    result *= num;
+  }
+  return result;
 };
 
 // Do not edit below this line
