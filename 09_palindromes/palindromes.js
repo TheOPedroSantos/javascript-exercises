@@ -1,5 +1,5 @@
 const palindromes = function(str) {
-    str = str.replace(/\s/g, '').toLowerCase();
+    str = str.replace(/[^0-9a-z-A-Z ]/g, "").replace(/ +/, "").replace(/\s/g, '').toLowerCase();
     const reverseString = str.split("").reverse().join("");
     return str === reverseString;
 };
