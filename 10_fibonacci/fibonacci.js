@@ -1,5 +1,7 @@
 const fibonacci = function(member) {
-    if (member <= 0) {
+    if (member < 0) {
+        return 'OOPS';
+    } else if (member == 0) {
         return 0;
     } else if (member == 1 || member == 2) {
         return 1;
@@ -7,8 +9,6 @@ const fibonacci = function(member) {
         return fibonacci(member - 1) + fibonacci(member - 2);
     }
 };
-
-fibonacci(4);
 
 // Do not edit below this line
 module.exports = fibonacci;
