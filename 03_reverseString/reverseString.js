@@ -1,5 +1,5 @@
 const reverseString = function(str) {
-    const reverseText = str.split("").reduce((acc, char) => char + acc, "");
+    const reverseText = str.toString().split("").reduce((acc, char) => char + acc, "");
     return reverseText;
 };
 
